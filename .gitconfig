@@ -1,0 +1,32 @@
+[user]
+	name = João Víctor Rocon Maia
+	email = joao@joaovrmaia.com
+[core]
+	excludesfile = $HOME/.gitignore
+	pager = less -FRSX
+	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = true
+	pager = true
+[color "status"]
+	added = green
+	changed = yellow
+	untracked = red
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+[mergetool "vim"]
+	cmd = vim $MERGED
+	trustExitCode = false
+[merge]
+	tool = vim
+[push]
+	default = matching
+[pull]
+	default = matching
