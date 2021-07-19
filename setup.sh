@@ -39,3 +39,9 @@ git clone https://github.com/iamhsa/pkenv.git ${HOME}/.pkenv
 
 # terraform
 git clone https://github.com/tfutils/tfenv.git ~/.tfenv
+
+# dart
+git clone https://github.com/cbracken/dvm.git .dvm
+
+# flutter
+dart pub global activate fvm
